@@ -40,15 +40,6 @@ dependencies = [
     "jinja2>=3.0",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=7.0",
-    "pytest-cov>=4.0",
-    "mypy>=1.0",
-    "types-paramiko>=3.0",
-    "types-PyYAML>=6.0",
-]
-
 [project.scripts]
 lifter = "lifter.cli:app"
 
@@ -82,5 +73,10 @@ python_files = ["test_*.py"]
 
 [dependency-groups]
 dev = [
+    "mypy>=1.0",
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
     "ruff>=0.14.10",
+    "types-paramiko>=3.0",
+    "types-PyYAML>=6.0",
 ]

@@ -9,11 +9,8 @@
 ## よく使うコマンド
 
 ```bash
-# 開発モードでインストール
-pip install -e .
-
-# 開発用依存関係も含めてインストール
-pip install -e ".[dev]"
+# 開発モードでインストール（依存関係も含む）
+uv sync
 
 # リント実行
 ruff check src/
