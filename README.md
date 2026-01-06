@@ -47,7 +47,7 @@ lifter sweep start sweeps/openvla.yaml --max-runs 10
 # ローカル実行（SSH/Slurm不要）
 lifter sweep start sweeps/openvla.yaml \
   --local \
-  --template templates_local/openvla_sweep.sh \
+  --template sweeps_local/openvla_sweep.sh \
   --max-runs 5
 ```
 

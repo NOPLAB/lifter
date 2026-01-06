@@ -11,13 +11,13 @@ examples/
 │   └── simple_python.sh     # Pythonスクリプト実行
 ├── sweeps/                  # W&B Sweep設定
 │   ├── sweep_simple.yaml    # 入門用シンプル設定
-│   └── sweep_*.yaml         # 高度な設定
-├── templates_remote/        # Slurmリモート実行用テンプレート
+│   └── sweep_openvla.yaml   # OpenVLA用設定
+├── sweeps_remote/           # Slurmリモート実行用テンプレート
 │   ├── simple_sweep.sh      # シンプルなSweepテンプレート
-│   └── *_sweep.sh           # 高度なテンプレート
-└── templates_local/         # ローカル実行用テンプレート
+│   └── openvla_sweep.sh     # OpenVLA用テンプレート
+└── sweeps_local/            # ローカル実行用テンプレート
     ├── simple_sweep.sh      # シンプルなSweepテンプレート
-    └── *_sweep.sh           # 高度なテンプレート
+    └── openvla_sweep.sh     # OpenVLA用テンプレート
 ```
 
 ## クイックスタート
@@ -46,13 +46,13 @@ lifter submit examples/jobs/simple_python.sh
 ```bash
 # リモート（Slurm）で実行
 lifter sweep start examples/sweeps/sweep_simple.yaml \
-  --template examples/templates_remote/simple_sweep.sh \
+  --template examples/sweeps_remote/simple_sweep.sh \
   --max-runs 5
 
 # ローカルで実行
 lifter sweep start examples/sweeps/sweep_simple.yaml \
   --local \
-  --template examples/templates_local/simple_sweep.sh \
+  --template examples/sweeps_local/simple_sweep.sh \
   --max-runs 5
 ```
 

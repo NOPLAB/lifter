@@ -13,7 +13,7 @@
 # 注: OpenVLAはTFRecordを直接読み込むため、LeRobot変換は不要です。
 #
 # 使用方法:
-#   slurm-submit sweep start examples/sweeps/sweep_openvla.yaml \
+#   lifter sweep start examples/sweeps/sweep_openvla.yaml \
 #     --template examples/templates/openvla_sweep.sh --max-runs 10
 #
 # =============================================================================
