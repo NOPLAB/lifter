@@ -51,6 +51,8 @@ lifter sweep start sweeps/openvla.yaml \
   --max-runs 5
 ```
 
-## ライセンス
+## ライセンスおよびコピーライト
 
-MIT License
+© 2025 nop
+
+このプロジェクトはMITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
